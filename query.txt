@@ -1,0 +1,5 @@
+CREATE TABLE users ( userId int NOT NULL AUTO_INCREMENT, firstName varchar(255), lastName varchar(255),email varchar(255), password varchar(612), role varchar(255), gender varchar(255), hobbies varchar(255), loginToken varchar(4096), isLoggedIn varchar(255), department varchar(255), PRIMARY KEY (userId));
+
+ALTER TABLE users ADD categoryName varchar(255), location varchar(255), salary varchar(255);
+
+CREATE TABLE departments ( departmentId int NOT NULL AUTO_INCREMENT, departmentName varchar(255), PRIMARY KEY (departmentId));
